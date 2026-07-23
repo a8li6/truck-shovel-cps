@@ -1,0 +1,9 @@
+origin,destination,load_state,distance_km,mean_speed_kph
+D1,S1,empty,2.4,30
+D1,S2,empty,3.1,28
+D2,S1,empty,2.8,29
+D2,S2,empty,2.0,31
+S1,D1,loaded,2.4,22
+S1,D2,loaded,2.8,21
+S2,D1,loaded,3.1,20
+S2,D2,loaded,2.0,23

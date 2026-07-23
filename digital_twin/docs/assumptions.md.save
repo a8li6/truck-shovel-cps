@@ -26,42 +26,9 @@
 
 ## Route Assumptions (Section 6.3)
 
-Mean travel time is calculated as:
-
-```
-T_minutes = (distance_km / speed_kph) * 60
-```
+Mean traveT_minutes = (distance_km / speed_kph) * 60
 
 A stochastic multiplier from `Triangular(0.88, 1.00, 1.18)` is applied
 to represent normal variability in road conditions and operator behavior.
 
-## Payload Assumption (Section 6.4)
-
-```
-P = min(102, max(82, Normal(95, 4²)))
-```
-
-Payload does not affect travel speed in the MVP.
-Speed-dependent payload may be added after MVP is complete.
-
-## Failure and Repair Assumptions (Section 6.5)
-
-| Parameter | Distribution |
-|---|---|
-| Shovel time between failures | Exponential(mean = 240 min) |
-| Shovel repair duration | Triangular(15, 25, 45 min) |
-| Truck time between failures (optional) | Exponential(mean = 360 min) |
-| Truck repair duration (optional) | Triangular(10, 20, 35 min) |
-
-## What Is Out of Scope
-
-- No real mine site, equipment model, or ore body is represented.
-- No road-network routing, grade, or haul-road degradation.
-- No ore-grade or blending assumptions.
-- Payload does not affect travel speed (MVP constraint).
-
-## Change Control
-
-Any change to these assumptions must be reflected in both
-`base_scenario.json` and this document in the same pull request.
-
+## Payload Assumption 

@@ -1,0 +1,7 @@
+{
+  "seed": 20260715,
+  "samples_per_distribution": 500,
+  "service_rows": 2000,
+  "travel_rows": 4000,
+  "payload_rows": 500
+}
